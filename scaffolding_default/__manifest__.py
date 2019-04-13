@@ -18,7 +18,8 @@
         'purchase',
 
         # minimum modules for argentinian localizacion + utilities + fixes
-        'standard_depends',
+        # si es enterprise poner standard_depends_ee si es community standard_depends_ce
+        'standard_depends_xx',
 
         # utilitarios adicionales
         'backend_theme',
