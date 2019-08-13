@@ -48,7 +48,6 @@
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'rafi16jan-backend-theme',
          'branch': '11.0'},
-
         {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools',
@@ -68,6 +67,7 @@
         {'usr': 'jobiols', 'repo': 'oca-server-tools', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'oca-social', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'oca-server-brand', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'oca-server-ux', 'branch': '11.0'},
     ],
     'docker': [
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '11.0'},
