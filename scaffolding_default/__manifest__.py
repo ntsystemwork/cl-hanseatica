@@ -22,7 +22,7 @@
         'standard_depends_xx',
 
         # utilitarios adicionales
-        'backend_theme',
+        'backend_theme_v11',
     ],
     'data': [
     ],
