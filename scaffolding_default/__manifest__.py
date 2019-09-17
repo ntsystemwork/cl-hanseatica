@@ -6,7 +6,7 @@
 # -----------------------------------------------------------------------------
 {
     'name': 'scaffolding',
-    'version': '11.0.0.0.0',
+    'version': '12.0.0.0.0',
     'license': 'Other OSI approved licence',
     'category': 'Tools',
     'summary': 'Customizacion para scaffolding',
@@ -20,9 +20,6 @@
         # minimum modules for argentinian localizacion + utilities + fixes
         # si es enterprise poner standard_depends_ee si es community standard_depends_ce
         'standard_depends_xx',
-
-        # utilitarios adicionales
-        'backend_theme_v11',
     ],
     'data': [
     ],
@@ -37,57 +34,38 @@
     # Here begins docker-odoo-environment manifest
     # --------------------------------------------
 
-    # if Enterprise it installs in a different directory than community
-    'Enterprise': False,
-
     # port where odoo starts serving pages
     'port': '8069',
-
     'repos': [
-        {'usr': 'ntsystemwork', 'repo': 'cl-scaffolding', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '11.0'},
+        {'usr': 'ntsystemwork', 'repo': 'cl-scaffolding', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '12.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools',
-         'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-miscellaneous', 'branch': '11.0'},
+         'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-miscellaneous', 'branch': '12.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-argentina-reporting',
-         'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-reporting-engine', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-aeroo_reports', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-sale', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-odoo-support', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-product', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-partner', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'oca-partner-contact', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'oca-web', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'oca-server-tools', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'oca-social', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'oca-server-brand', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'oca-server-ux', 'branch': '11.0'},
+         'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-reporting-engine', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-aeroo_reports', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-sale', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-odoo-support', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-product', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-partner', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-partner-contact', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-web', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-server-tools', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-social', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-server-brand', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-server-ux', 'branch': '12.0'},
     ],
     'docker': [
-        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '11.0'},
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '12.0'},
         {'name': 'postgres', 'usr': 'postgres', 'ver': '11.1-alpine'},
         {'name': 'nginx', 'usr': 'nginx', 'ver': 'latest'},
         {'name': 'aeroo', 'usr': 'adhoc', 'img': 'aeroo-docs'},
     ],
 
-    # example repos version 2
-    # Note that the branch of the repo to download is taken from the module
-    # version
-    'git-repos': [
-        'https://github.com/jobiols/cl-scaffolding.git',
-        'https://github.com/jobiols/odoo-addons.git',
-        'https://github.com/jobiols/adhoc-odoo-argentina.git',
-    ],
-
-    # example images version 2
-    'docker-images': [
-        {'img': 'jobiols/odoo-jeo:11.0', 'name': 'odoo'},
-        {'img': 'postgres:11.1-alpine', 'name': 'postgres'},
-        {'img': 'adhoc/aeroo', 'name': 'aeroo'},
-    ]
 }
 
