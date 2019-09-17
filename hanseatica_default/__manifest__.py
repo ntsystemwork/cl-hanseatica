@@ -5,11 +5,11 @@
 #
 # -----------------------------------------------------------------------------
 {
-    'name': 'scaffolding',
+    'name': 'hanseatica',
     'version': '12.0.0.0.0',
     'license': 'Other OSI approved licence',
     'category': 'Tools',
-    'summary': 'Customizacion para scaffolding',
+    'summary': 'Customizacion para hanseatica',
     'author': 'NT System Work',
     'depends': [
         # basic applications
@@ -37,7 +37,7 @@
     # port where odoo starts serving pages
     'port': '8069',
     'repos': [
-        {'usr': 'ntsystemwork', 'repo': 'cl-scaffolding', 'branch': '12.0'},
+        {'usr': 'ntsystemwork', 'repo': 'cl-hanseatica', 'branch': '12.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '12.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '12.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '12.0'},

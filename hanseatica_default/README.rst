@@ -1,4 +1,4 @@
-.. |customer| replace:: scaffolding
+.. |customer| replace:: hanseatica
 
 .. |company| replace:: NT System Work
 
