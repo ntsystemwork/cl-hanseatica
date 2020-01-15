@@ -38,6 +38,7 @@
     'port': '8069',
     'repos': [
         {'usr': 'ntsystemwork', 'repo': 'cl-hanseatica', 'branch': '11.0'},
+        {'usr': 'ntsystemwork', 'repo': 'cl-piscinas', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '11.0'},
